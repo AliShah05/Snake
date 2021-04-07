@@ -1,0 +1,173 @@
+body {
+    margin: 0 auto;
+    background-color: #be530b;
+}
+* {box-sizing: border-box;}
+.header {
+    
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header--color{
+    position: fixed;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+.header a {
+    opacity: 1;
+}
+.nav--link a {
+    font-size: 18px;
+    color: #fff;
+    padding: 0 50px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.nav--link:hover a {
+    color: #be530b;
+}
+.div {
+    width: 20px;
+    height: 2500px;
+}
+.none {
+    display: none;
+}
+.testBtn{
+    background-color: rgb(82, 82, 245);
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+/* TABS */
+    .tabs {
+        width: 100%;
+        height: 300px;
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+    }
+    .container-table {
+        width: 20%;
+        height: 100%;
+        background-color: white;
+        
+    }
+    .tabs--nav {
+        width: 100%;
+        height: fit-content;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .tabs--href {
+        font-size: 20px;
+        padding: 10px;
+        color: #000000;
+        border: none;
+        cursor: pointer;
+        border: 1px solid #000;
+        transition: all 0.3s ease;
+    }
+
+    .tabs--href.active {
+        color: white;
+        background-color: blue;
+    }
+    
+
+    .tabs--content {
+        width: 100%;
+    }
+
+    .tabs--item {
+        display: none;
+    }
+
+    .tabs--item.active {
+        display: block;
+    }
+/* END TABS */
+a {
+    color: red;
+}
+.calculate {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-gap: 3px;
+    background-color: #212121;
+    padding: 4px;
+    border-radius: 5px;
+    max-width: 360px;
+    font-family: "Tahomo";
+}
+
+.item {
+    background-color: #B3E5FC;
+    user-select: none;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    cursor: pointer;
+}
+form {
+    max-width: 100%;
+}
+input {
+    width: 98%;
+    height: 60px;
+    
+    font-size: 30px;
+    outline: none;
+    text-align: right;
+}
+.input {
+    grid-column: 1/-1;
+    padding: 0;
+}
+.clean {
+    background-color: rgb(160, 166, 247);
+    grid-column: 1/-3;
+}
+.back {
+    grid-column: 3/-1;
+}
+.zero {
+    grid-column: 1/-3
+}
+.equal {
+    grid-column: 4;
+    grid-row: 6/8;
+    background-color: rgba(248, 116, 116, 0.808);
+}
+
+
+.canvas {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+canvas {
+    background-color: black;
+    margin: 0 auto;
+    display: block;
+}
