@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <header class="header" id="header">
+        <div class="nav--link"><a >Home</a>    </div>
+        <div class="nav--link"><a >Page</a>    </div>
+        <div class="nav--link"><a >Cotnact</a>    </div>
+        <div class="nav--link"><a >Blog</a>    </div>
+        <div class="nav--link"><a >Price</a>    </div>
+    </header>
+    <button type="button" class="testBtn">Скрыть</button>
+
+    
+    <div class="tabs">
+        <div class="container-table">
+            <div class="tabs--nav">
+                <a class="tabs--href" type="button" data-tab="#tabs-1">Таблица 1</a>
+                <a class="tabs--href" type="button" data-tab="#tabs-2">Таблица 2</a>
+                <a class="tabs--href" type="button" data-tab="#tabs-3">Таблица 3</a>
+            </div>
+            <div class="tabs--content">
+                <div class="tabs--item" id="tabs-1"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, quam! Suscipit, asperiores sunt! Pariatur, id. Doloribus ipsa quis nesciunt, blanditiis nihil corrupti natus vel earum atque nostrum excepturi fugiat est.</p></div>
+                <div class="tabs--item" id="tabs-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quis nostrum molestiae sint nulla. Suscipit iure debitis architecto dolorem, ut vero quaerat laborum illo obcaecati.<p></p></div>
+                <div class="tabs--item" id="tabs-3">Omnis nesciunt ipsum cumque facilis blanditiis quis nostrum molestiae sint nulla. Suscipit iure debitis architecto dolorem, ut vero quaerat laborum illo obcaecati.<p></p></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="calculate">    
+        <div class="container">
+            <div class="item input"><form name="form"><input type="text" name="textview" readonly></form></div>
+            <div class="item clean" onclick="clean()">C</div>
+            <div class="item back" onclick="back()">&larr;</div>
+            <div class="item" onclick="insert('+')">+</div>
+            <div class="item" onclick="insert('-')">-</div>
+            <div class="item" onclick="insert('*')">&times;</div>
+            <div class="item" onclick="insert('/')">&divide;</div>
+            <div class="item" onclick="insert('7')" >7</div>
+            <div class="item" onclick="insert('8')" >8</div>
+            <div class="item" onclick="insert('9')" >9</div>
+            <div class="item" onclick="insert('(')" >(</div>
+            <div class="item" onclick="insert('4')" >4</div>
+            <div class="item" onclick="insert('5')" >5</div>
+            <div class="item" onclick="insert('6')" >6</div>
+            <div class="item" onclick="insert(')')" >)</div>
+            <div class="item" onclick="insert('1')" >1</div>
+            <div class="item" onclick="insert('2')" >2</div>
+            <div class="item" onclick="insert('3')" >3</div>
+            <div class="item equal" onclick="equal()">=</div>
+            <div class="item zero" onclick="insert('0')" >0</div>
+            <div class="item" onclick="insert('.')" >.</div>
+        </div>
+    </div> 
+
+
+    <div class="canvas">
+        <canvas id="game" width="608" height="608"></canvas>
+    </div>
+
+
+
+
+
+    <div class="div"></div>
+<script src="Тесты.js"></script>
+</body>
+</html>
